@@ -4,3 +4,20 @@
     <head>
         <meta charset="utf-8" />
         <title>{% block title %}Clothes{% endblock %}</title>
+        <link href="{% static "css/base.css" %}" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <a href="/">My Clothes</a>
+        </div>
+        <div>
+            <div>
+                Your cart is empty.
+            </div>
+        </div>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
